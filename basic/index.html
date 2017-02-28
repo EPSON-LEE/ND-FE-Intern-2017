@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
   <!-- IE条件注释 -->
@@ -17,12 +18,13 @@
     <nav class="nav">
         <a href="#" ><img class="brand"src="img/me.png" alt="回到首页"></a>
         <a href="#" ><img  class="github-brand" src="img/icon.png" alt="转到github"></a>
-        <ul>
+        <ul class="navList" id="navList">
           <li><a href="#">首页</a></li>
           <li><a href="#">文章</a></li>
           <li><a href="#">作品</a></li>
           <li><a href="#">关于</a></li>
         </ul>
+        <img id="burgerButton"class="burger-button" src="img/button.png" alt="burger-button">
     </nav>
   </header>
   <!-- container包裹层 -->
@@ -35,9 +37,9 @@
         <p class="banner-content">西安，古称“长安”，是举世闻名的世界四大文明古都之一，居中国古都之首，是中国历史上建都时间最长、建都朝代最多、影响力最大的都城，是中华民族的摇篮、中华文明的发祥地、中华文化的代表。</p>          
       </div>
     </div>
-    <!-- article -->
-    <div id="wrapper">
-      <div id="left">
+    <!-- wrapper -->
+    <div class="wrapper">
+      <div class="left">
         <div class="wrapper-img">
           <img src="img/item.png" alt="">
         </div>
@@ -48,7 +50,7 @@
 
         </div>
       </div>
-      <div id="center">
+      <div class="center">
        <div class="wrapper-img">
           <img src="img/item1.png" alt="">
         </div>
@@ -62,7 +64,7 @@
             </p>        
         </div>
       </div>
-      <div id="right">
+      <div class="right">
         <div class="wrapper-img">
           <img src="img/item2.png" alt="">
         </div>
@@ -159,5 +161,18 @@
       <img src="img/icon.png" alt="github-photo">
     </div> 
   </footer>
+  <script>
+    window.onload = function(){
+      var burgerButton = document.getElementById('burgerButton');
+      var navList = document.getElementById('navList');
+      burgerButton.onclick = function(){
+        if(navList.style.display == 'none' || navList.style.display == ''){
+          navList.style.display = 'block';  
+        }else{
+          navList.style.display = 'none';
+        }
+      }
+    }
+  </script>
 </body>
 </html>

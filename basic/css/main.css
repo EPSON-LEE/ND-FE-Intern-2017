@@ -94,10 +94,6 @@ li{
     background: #ccc; 
 }
 
-/* ===============
-    浏览器更新提示
-   =============== */
-
 body {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -118,204 +114,297 @@ a:hover, a:active{
 
 header {
     width: 100%    
-  }
+}
 
+header .nav {
+  height: 8rem;
+  width: 100%;
+  background-color: #522A5C;
+}
+
+header .nav .brand {
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+header .burger-button {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  display: none;
+}
+header .nav .navList {
+  text-align: right;
+  padding-top: 4.5rem;
+  padding-right: 10rem;
+  display: block;
+}
+
+header .nav ul li {
+  display: inline-block;
+}
+
+header .nav ul li a {
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+}
+
+header .nav .github-brand {
+  float: right;
+  height: 5rem;
+  margin-right: 0.8rem;
+  margin-top: 3rem;
+}
+/* container */
+.container {
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.banner .banner-image {
+  width: 100%;
+  height: 40rem;
+}
+
+.banner .float-box {
+  position: absolute;
+  right: 15rem;
+  bottom: 0.4rem;
+  height: 13rem;
+  width: 35rem;
+  background-color: white;
+  opacity: 0.6;
+  filter:alpha(opacity=60);
+}
+
+.banner-title {
+  text-align: right;
+  padding-right: 0.8rem;
+  color: black;
+}
+
+.banner-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-indent: 2rem;
+  font-weight: bold;
+}
+
+/* wrapper */
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #EEEEEE;
+}
+
+.wrapper img {
+  width: 25rem;
+  height: 13rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.wrapper .wrapper-img {
+text-align: center;
+}
+
+.wrapper .wrapper-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 15px;
+  font-weight: 600; 
+  text-indent: 2rem;
+}
+
+.left, .center, .right {
+  margin-bottom: -10000rem;
+  padding-bottom: 10000rem;
+  margin-top: 1rem;
+}
+
+.left {
+  float: left;
+  width: 25%;
+  background: #FFFDFD;
+  margin-left: 10%;
+}
+
+.center {
+  float: left;
+  width: 25%;
+  background: #FFFDFD;
+  margin-left: 2.5%;
+}
+
+.right {
+  float: right;
+  width: 25%;
+  background: #FFFDFD;
+  margin-right: 10%;
+}
+
+/* introduction */
+.introduction {
+  background-color: white;
+  width: 100%;
+  margin-top: 20rem;
+}
+
+.introduction-content{
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.introduction-content img {
+  width: 14rem;
+  margin-top: -8rem;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  background-color: black;
+}
+
+.footer .footer-content-menu ul {
+  text-align: center;
+  border-bottom: 1px grey solid;
+}
+
+.footer .footer-content-menu ul li {
+  display: inline-block;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer .footer-content-menu ul li a {
+  color: white;
+}
+
+.footer .footer-content-list {
+  text-align: center;
+} 
+
+.footer .footer-content-list ul {
+  display: inline-block;
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+
+.footer .footer-content-list ul li a{
+  color: white;
+}
+
+.footer .footer-content-list .title {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: black;
+  margin-top: -1rem;
+}
+footer .footer-article {
+  padding-top: 8rem;
+  text-align: center;
+}
+footer .press {
+  color: white;
+}
+footer img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* header 移动端设备 */
+
+/* 800px 以下 */
+@media only screen and (max-width: 800px) {
+  /* header */
   header .nav {
-    height: 8rem;
-    width: 100%;
-    background-color: #522A5C;
+    background-color: black;
   }
-
-  header .nav .brand {
-    float: left;
-    width: 5rem;
-    height: 5rem;
-    margin-top: 2rem;
-    margin-left: 4rem;
+  
+  header .nav .github-brand {
+    display: none;
   }
-
-  header .nav ul {
+  header .nav .navList {
     text-align: right;
     padding-top: 4.5rem;
     padding-right: 10rem;
+    display: none;
   }
-
-  header .nav ul li {
-    display: inline-block;
-  }
-
-  header .nav ul li a {
-    display: inline-block;
-    padding: 0 1.5rem;
-    font-size: 2rem;
-    font-weight: 100;
-    color: white;
-    text-decoration: none;
-  }
-  header .nav .github-brand {
-    float: right;
-    height: 5rem;
-    margin-right: 0.8rem;
-    margin-top: 3rem;
-  }
-
-/* container */
- .container {
-    width: 100%;
-    background-color: #EEEEEE;
-  }
-  
-  .banner {
-    width: 100%;
-    position: relative;
-  }
-
-  .banner .banner-image {
-    width: 100%;
-    height: 40rem;
-  }
-  .banner .float-box {
+  header .burger-button {
+    width: 80px;
+    height: 40px;
     position: absolute;
-    right: 15rem;
-    bottom: 0.4rem;
-    height: 13rem;
-    width: 35rem;
+    top: 40px;
+    right: 30px;
+    display: block;
+  }
+
+  /* container */
+  .container .banner .float-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
     background-color: white;
     opacity: 0.6;
-    filter:alpha(opacity=60);
+    filter: alpha(opacity=60);
   }
-  .banner-title {
-    text-align: right;
-    padding-right: 0.8rem;
-    color: black;
-  }
-  .banner-content {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-indent: 2rem;
-    font-weight: bold;
-  }
-
-  /* article */
-  #wrapper {
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    background-color: #EEEEEE;
-  }
-  #wrapper img {
-    width: 25rem;
-    height: 13rem;
-    margin-top: 10px;
-    text-align: center;
-  }
-  #wrapper .wrapper-img {
-    text-align: center;
-  }
-  #wrapper .wrapper-content {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 15px;
-    font-weight: 600; 
-    text-indent: 2rem;
-  }
-  #left, #center, #right {
-    margin-bottom: -10000rem;
-    padding-bottom: 10000rem;
+  /* container wrapper */
+  .left, .center, .right {
+    margin-bottom: 0rem;
+    padding-bottom: 1rem;
     margin-top: 1rem;
   }
-  #left {
-  float: left;
-    width: 25%;
+
+  .left {
+    width: 100%;
     background: #FFFDFD;
-    margin-left: 10%;
+    margin-left: 0;
   }
-   #center {
+
+  .center {
     float: left;
-    width: 25%;
-    background: #FFFDFD;
-    margin-left: 2.5%;
-  }
-  #right {
-     float: right;
-    width: 25%;
-    background: #FFFDFD;
-    margin-right: 10%;
-  }
-
-  /* introduction */
-  .introduction {
-    background-color: white;
     width: 100%;
-    margin-top: 20rem;
-  }
+    background: #FFFDFD;
+    margin-left: 0;
+  }   
 
-  .introduction-content{
-    text-align: center;
-    padding-bottom: 10rem;
+  .right {
+    float: right;
+    width: 100%;
+    background: #FFFDFD;
+    margin-right: 0;
   }
-
-  .introduction-content img {
-    width: 14rem;
-    margin-top: -8rem;
-  }
-
   /* footer */
-  .footer {
-    width: 100%;
-    background-color: black;
-  }
-
-  .footer .footer-content-menu ul {
-    text-align: center;
-    border-bottom: 1px grey solid;
-  }
-
-  .footer .footer-content-menu ul li {
-    display: inline-block;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1rem;
-  }
-
-  .footer .footer-content-menu ul li a {
-    color: white;
-   }
-    
-  .footer .footer-content-list {
-    /* text-align: center; */
-   } 
-
-   .footer .footer-content-list ul {
-    display: inline-block;
-    padding-left: 15rem;
+  .footer .footer-content-list ul {
+    /* padding-left: 5rem; */
     padding-top: 5rem;
-   }
-
-   .footer .footer-content-list ul li a{
-    color: white;
-   }
-
-   .footer .footer-content-list .title {
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-   }
-
-   /* footer */
-  footer {
-    width: 100%;
-    background-color: black;
-    margin-top: -1rem;
-   }
-  footer .footer-article {
-    padding-top: 8rem;
-    text-align: center;
   }
-  footer .press {
-    color: white;
+
+  .footer .footer-content-list li {
+    display: inline-block;
   }
-  footer img {
-    width: 5rem;
-    height: 5rem;
-   }
+}
