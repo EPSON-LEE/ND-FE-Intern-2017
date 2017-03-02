@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>profile</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+  <!-- IE条件注释 -->
+  <!--[if lte IE 8]>
+  <p class="browserupgrade">您的浏览器版本影响体验, 请到 <a href="http://browsehappy.com/">这里</a> 更新, 以获取最佳的体验</p>
+  <![endif]-->
+  <header>
+    <nav class="nav">
+        <a href="#" ><img class="brand"src="img/me.png" alt="回到首页"></a>
+        <a href="#" ><img  class="github-brand" src="img/icon.png" alt="转到github"></a>
+        <ul class="navList" id="navList">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">文章</a></li>
+          <li><a href="#">作品</a></li>
+          <li><a href="#">关于</a></li>
+        </ul>
+        <img id="burgerButton"class="burger-button" src="img/button.png" alt="burger-button">
+    </nav>
+  </header>
+  <!-- section -->
+  <section class="article">
+    <div class="resume">
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-article">
+      <p><span class="press">网龙前端实习培训小组 版权所有 ® 2017-2020<span></p> 
+      <img src="img/icon.png" alt="github-photo">
+    </div> 
+  </footer>
+  <script>
+    window.onload = function(){
+      var burgerButton = document.getElementById('burgerButton');
+      var navList = document.getElementById('navList');
+      burgerButton.onclick = function(){
+        if(navList.style.display == 'none' || navList.style.display == ''){
+          navList.style.display = 'block';  
+        }else{
+          navList.style.display = 'none';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
