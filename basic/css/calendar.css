@@ -1,4 +1,4 @@
-.day{width:260px; padding:20px;margin-right: 10rem;background-color: white;margin-bottom: 5rem;}
+.day{width:260px; padding:20px;margin-right: 10rem;background-color: white;margin-bottom: 3rem;}
 .day table{width:100%;text-align:center;border-collapse:collapse;border-spacing:0;line-height:30px;}
 .day table th{font-weight:normal;line-height:30px;font-size:14px;}
 .day table td,.day th{border-bottom:1px solid #EEE;}

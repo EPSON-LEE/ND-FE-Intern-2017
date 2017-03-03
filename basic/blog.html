@@ -109,12 +109,16 @@
         margin: 0 10rem 3rem 0;
         background-color: #FFFFFF;
       }
-
+      
       .container .article-background .detail .search {
         height: 7rem;
         line-height: 7rem;
       }
       
+       .container .article-background .article .search {
+        display: none;
+       }
+
       .container .article-background .detail .search .search-box{
         height: 3rem;
         width: 15rem;
@@ -237,6 +241,58 @@
         padding-bottom: 20px;
       }
 
+      @media only screen and (max-width: 800px) {
+
+        .container .article-background .detail {
+          display: none;
+        }  
+
+        .container .article-background .article .search {
+          height: 7rem;
+          line-height: 7rem;
+          display: block;
+        }
+        
+        .container .article-background .article .search {
+          background-color: white;
+          margin-bottom: 1rem;
+        }
+
+        .container .article-background .article .search .search-box {
+          height: 3rem;
+          width: 15rem;
+          margin-left: 2rem;
+          text-align: center;
+          background: url('img/magnifier.png');
+          background-repeat:no-repeat;
+          background-size: 20% auto;
+          background-position: 1rem 0;
+        }
+        
+        .container .article-background .article .search .search-btn {
+          height: 3.6rem;
+          width: 4rem;
+          display: inline-block;
+          background-color: #EEEEEE;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 3.6rem;
+          margin-left: -0.3rem;
+          margin-top: -0.3rem;
+        }
+
+        .container .article-background .article .search .search-btn span {
+          color: white;
+          font-weight: bold;
+        }
+
+        .container .article-background .article {
+            margin-left: 10rem;
+            width: 80%;
+            margin-left: 8rem;
+        }
+      }
+
     </style>
 </head>
 <body>
@@ -261,6 +317,12 @@
   <div class="container">
     <div class="article-background clearfix">
         <div class="article">
+          <div class="search">
+            <input class="search-box" type="text" placeholder="Keywords">
+            <div class="search-btn">
+              <span>GO<span>
+            </div>
+          </div>
           <div class="article-label">
             <div class="article-label-date">
               <span>4.12</span>
