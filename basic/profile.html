@@ -3,11 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>profile</title>
+    <title>Index</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
+    <style>
+      .container {
+        background-color: #f7f7f7;
+      }
+      .profile {
+        margin: 0 auto;
+        width: 80%;
+        height: 160rem;
+        background-color: #FFFFFF;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+        background-image: url(./img/line.png);
+        background-repeat: repeat-y;
+        background-position-x: center;
+      }
+
+      .profile .profile-content {
+        width: 20%;
+        height: 160rem;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .head, .contact, .exprience, .work {
+        border-radius: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3rem;
+        background-repeat:  no-repeat;
+        background-size: cover;
+      } 
+
+      .head {
+        width: 15rem;
+        height: 15rem;
+        background-image: url(./img/me.png);
+        display: inline-block;
+        border: 10px solid #f7f7f7;
+        margin-bottom: 2rem;
+        margin-top: -7rem;
+      }
+
+      .contact {
+        width: 10rem;
+        height: 10rem;
+        background-image: url(./img/contact.jpg);
+        border: 5px solid #f7f7f7;
+      }
+
+      .exprience {
+        width: 10rem;
+        height: 10rem;
+        background-image: url(./img/experience.jpg);
+        border: 5px solid #f7f7f7;
+      }
+
+      .work {
+        width: 10rem;
+        height: 10rem;
+        background-image: url(./img/work.jpg);
+        border: 5px solid #f7f7f7;
+      }
+
+      .container .profile .profile-content .profile-left {
+        margin-left: -20rem;
+      }
+
+      .container .profile .profile-content .profile-right {
+        width: 20rem;
+        height: 15rem;
+        margin-left: 15rem;
+        margin-top: -5rem;
+        text-align: -webkit-auto;
+      }
+
+      .container .profile .profile-content .profile-middle {
+        border: solid 5px #f7f7f7;
+        width: 5rem;
+        margin: 0 auto;
+        border-radius: 20%;
+        background-color: white;
+      }
+    </style>
 </head>
 <body>
   <!-- IE条件注释 -->
@@ -27,12 +110,102 @@
         <img id="burgerButton"class="burger-button" src="img/button.png" alt="burger-button">
     </nav>
   </header>
-  <!-- section -->
-  <section class="article">
-    <div class="resume">
-      
+  <!-- container包裹层 -->
+  <div class="container">
+    <div class="profile">
+      <div class="profile-content">
+        <div class="line"></div>
+        <div class="head"></div>
+        <div class="profile-left">LeeJiahao</div>
+        <div class="profile-right">
+            <p>This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. This is my profile. </p>
+        </div>
+        <div class="contact"></div>
+        <div class="profile-left">contact method</div>
+        <div class="profile-right">
+          <p>Tel:18829292287</p>
+          <p>Email:491071291@qq.com</p>
+          <p>Wechat:18829292287</p>
+        </div>
+        <div class="exprience"></div>
+        <div class="profile-left">Education</div>
+        <div class="profile-middle">1995</div>
+        <div class="profile-right">birth date</div>
+        <div class="profile-middle">2010</div>
+        <div class="profile-right">high school</div>
+        <div class="profile-middle">2017</div>
+        <div class="profile-right">univercity</div>
+        <div class="work"></div>
+        <div class="profile-left">work experience</div>
+        <div class="profile-middle">2016</div>
+        <div class="profile-right">computer and finacial lab</div>
+        <div class="profile-middle">2016</div>
+        <div class="profile-right">XI'an Woo-Qu company</div>
+      </div>
+      <div>
+        <p> dasdsadasdsa</p>
+        <p> dasdsadasdsa</p>
+        <p> dasdsadasdsa</p>
+      </div>  
     </div>
-  </section>
+    <!-- footer -->
+    <nav class="footer">
+      <div class="footer-content-menu">
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">文章</a></li>
+          <li><a href="#">作品</a></li>
+          <li><a href="#">关于</a></li>
+        </ul>
+      </div>
+      <div class="footer-content-list">
+        <ul>
+          <li class="title"><a>学习资料</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+        </ul>
+        <ul>
+          <li class="title"><a>友情链接</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+        </ul>
+        <ul>
+          <li class="title"><a>学习资料</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+        </ul>
+        <ul>
+          <li class="title"><a>友情链接</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+        </ul>
+        <ul>
+          <li class="title"><a>学习资料</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+        </ul>
+      </div></nav>
+  </div>
 
   <footer>
     <div class="footer-article">
