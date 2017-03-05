@@ -1,11 +1,65 @@
-- 使用媒体查询实现不同分辨率设备不同的显示效果
+- 直接浏览效果 [点击浏览](http://htmlpreview.github.com/?https://github.com/EPSON-LEE/ND-FE-Intern-2017/blob/master/basic/MyBlog/index.html)
 
-- index 页面下中 图片说明性模块 的三栏等高布局
 
-    [image]
+- 使用媒体查询实现不同分辨率设备不同的显示效果，当屏幕分辨率小于860px显示移动端布局
 
-- 在 blog gallery 页面 由于页面宽度没有一个 定宽 为了确保不同分辨率下的显示效果 使用了百分比浮动布局
+- index 页面下中图片说明性模块的三栏等高布局
 
-- calendar 模块下 显示年月的部分样式些许改变
+    ![](./model/materia/01.png)
 
-    [image]
+- 在Blog页面中日历的年月日显示改为两个select框
+
+	![](./model/materia/02.png)
+
+- Index页面效果图
+
+	- PC端
+	
+	![](./model/sketch/index.png)
+
+	- 移动端
+
+	![](./model/sketch/index-mobile.png)
+
+
+- Blog页面效果图
+
+	- PC端
+	
+	![](./model/sketch/blog.png)
+
+	- 移动端
+
+	![](./model/sketch/blog-mobile.png)
+
+
+- Gallery页面效果图
+
+	- PC端
+	
+	![](./model/sketch/gallery.png)
+
+	- 移动端
+
+	![](./model/sketch/gallery-mobile.png)
+
+
+- Profile页面效果图
+
+	- PC端
+	
+	![](./model/sketch/profile.png)
+
+	- 移动端
+
+	![](./model/sketch/profile-mobile.png)
+
+
+- 遇到的问题
+	
+	1. Gallery页面中的瀑布流使用column布局时,一个图片解释框中的内容被切成两列
+	
+	![](./model/materia/03.png)
+
+
+	
