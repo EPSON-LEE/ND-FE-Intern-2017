@@ -3,111 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Index</title>
+    <title>Profile</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/profile.css">
     <script src="js/main.js"></script>
-    <style>
-      .container {
-        background-color: #f7f7f7;
-      }
-      .profile {
-        margin: 0 auto;
-        width: 80%;
-        height: 160rem;
-        background-color: #FFFFFF;
-        margin-top: 10rem;
-        margin-bottom: 2rem;
-        background-image: url(./img/line.png);
-        background-repeat: repeat-y;
-        background-position-x: center;
-      }
-
-      .profile .profile-content {
-        width: 20%;
-        height: 160rem;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .head, .contact, .exprience, .work {
-        border-radius: 100%;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 3rem;
-        background-repeat:  no-repeat;
-        background-size: cover;
-      } 
-
-      .head {
-        width: 15rem;
-        height: 15rem;
-        background-image: url(./img/me.png);
-        display: inline-block;
-        border: 10px solid #f7f7f7;
-        margin-bottom: 2rem;
-        margin-top: -7rem;
-      }
-
-      .contact {
-        width: 10rem;
-        height: 10rem;
-        background-image: url(./img/contact.jpg);
-        border: 5px solid #f7f7f7;
-      }
-
-      .exprience {
-        width: 10rem;
-        height: 10rem;
-        background-image: url(./img/experience.jpg);
-        border: 5px solid #f7f7f7;
-      }
-
-      .work {
-        width: 10rem;
-        height: 10rem;
-        background-image: url(./img/work.jpg);
-        border: 5px solid #f7f7f7;
-      }
-
-      .container .profile .profile-content .profile-left {
-        margin-left: -20rem;
-      }
-
-      .container .profile .profile-content .profile-right {
-        width: 20rem;
-        height: 15rem;
-        margin-left: 15rem;
-        margin-top: -5rem;
-        text-align: -webkit-auto;
-      }
-
-      .container .profile .profile-content .profile-middle {
-        border: solid 5px #f7f7f7;
-        width: 5rem;
-        margin: 0 auto;
-        border-radius: 20%;
-        background-color: white;
-      }
-    </style>
 </head>
 <body>
   <!-- IE条件注释 -->
   <!--[if lte IE 8]>
   <p class="browserupgrade">您的浏览器版本影响体验, 请到 <a href="http://browsehappy.com/">这里</a> 更新, 以获取最佳的体验</p>
   <![endif]-->
-  <header>
+    <header>
     <nav class="nav">
         <a href="#" ><img class="brand"src="img/me.png" alt="回到首页"></a>
         <a href="#" ><img  class="github-brand" src="img/icon.png" alt="转到github"></a>
         <ul class="navList" id="navList">
-          <li><a href="#">首页</a></li>
-          <li><a href="#">文章</a></li>
-          <li><a href="#">作品</a></li>
-          <li><a href="#">关于</a></li>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="blog.html">文章</a></li>
+          <li><a href="profile.html">作品</a></li>
+          <li><a href="gallery.html">关于</a></li>
         </ul>
-        <img id="burgerButton"class="burger-button" src="img/button.png" alt="burger-button">
+        <img id="burgerButton" class="burger-button" src="img/button.png" alt="burger-button">
+        <div id="burgerSwitch" class="burger-list" style="display:none;">
+          <ul id="burgerUl" class="burger-ul">
+            <li class="burger-li"><a href="index.html">首页</a></li>
+            <li class="burger-li"><a href="blog.html">文章</a></li>
+            <li class="burger-li"><a href="profile.html">作品</a></li>
+            <li class="burger-li"><a href="gallery.html">关于</a></li>
+          </ul>
+        </div>
     </nav>
   </header>
   <!-- container包裹层 -->
@@ -142,88 +68,75 @@
         <div class="profile-middle">2016</div>
         <div class="profile-right">XI'an Woo-Qu company</div>
       </div>
-      <div>
-        <p> dasdsadasdsa</p>
-        <p> dasdsadasdsa</p>
-        <p> dasdsadasdsa</p>
-      </div>  
     </div>
-    <!-- footer -->
-    <nav class="footer">
-      <div class="footer-content-menu">
-        <ul>
-          <li><a href="#">首页</a></li>
-          <li><a href="#">文章</a></li>
-          <li><a href="#">作品</a></li>
-          <li><a href="#">关于</a></li>
-        </ul>
-      </div>
-      <div class="footer-content-list">
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>友情链接</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>友情链接</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-      </div></nav>
   </div>
 
   <footer>
-    <div class="footer-article">
-      <p><span class="press">网龙前端实习培训小组 版权所有 ® 2017-2020<span></p> 
-      <img src="img/icon.png" alt="github-photo">
-    </div> 
+    <nav class="footer">
+        <div class="footer-content-menu">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="blog.html">文章</a></li>
+            <li><a href="profile.html">作品</a></li>
+            <li><a href="gallery.html">关于</a></li>
+          </ul>
+        </div>
+        <div class="footer-content-list">
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>友情链接</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>友情链接</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-article">
+        <p><span class="press">网龙前端实习培训小组 版权所有 ® 2017-2020<span></p> 
+        <img src="img/icon.png" alt="github-photo">
+      </div> 
   </footer>
   <script>
     window.onload = function(){
-      var burgerButton = document.getElementById('burgerButton');
-      var navList = document.getElementById('navList');
-      burgerButton.onclick = function(){
-        if(navList.style.display == 'none' || navList.style.display == ''){
-          navList.style.display = 'block';  
-        }else{
-          navList.style.display = 'none';
-        }
-      }
+     burgerList();
     }
   </script>
 </body>

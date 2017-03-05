@@ -1,0 +1,304 @@
+  .container .article-background {
+        width: 100%;
+        height: 100%;
+        background-color: #EEEEEE;
+      }
+
+      .container .article-background .article,
+      .container .article-background .detail {
+        margin-top: 2rem;
+      }
+
+      .container .article-background .article {
+        float: left;
+        width: 53%;
+        margin-left: 15%;
+        position: relative;
+      }
+
+      .container .article-background .article .article-label, 
+      .container .article-background .article .article-label2,
+      .container .article-background .article .article-label3 {
+        width: 4rem;
+        position: absolute;
+        left: -4rem;
+      }
+      
+      .container .article-background .article .article-label-date{
+        font-size: 15px;
+        line-height: 4rem;
+        text-align: center;
+        background-color: #522A5C;
+        color: white;
+      }
+
+      .container .article-background .article .article-label-name{
+        font-size: 15px;
+      line-height: 4rem;
+      text-align: center;
+      background-color: #A660B7;
+      color: white;
+      }
+
+      .container .article-background .article .article-content {
+        padding: 2rem;
+        background-color: white;
+      }
+
+      .container .article-background .article .article-content h3 {
+        color: purple;
+        font-size: 16px;
+      }
+      
+      .container .article-background .article .article-content h4 {
+        color: grey;
+      }    
+      
+      .container .article-background .article .article-content p {
+        font-weight: bold;
+        text-indent: 2rem;
+        margin: 0;
+      }
+      .container .article-background .article .article-content {
+        margin-bottom: 1rem;
+      }
+      
+      .container .article-background .article .article-page {
+
+      }
+  
+      .container .article-background .article ul {
+        text-align: center;
+        padding: 5rem;
+      }      
+
+      .container .article-background .article li {
+        margin-left: 3px;
+        padding: 15px;
+        background-color: white;
+        display: inline-block;
+      }
+      
+      .container .article-background .article .select-dark {
+        background: white;
+        color: #E0E0E0;
+      }
+
+      .container .article-background .article .selected {
+        background-color: purple;
+        color: white;
+      }
+
+      .container .article-background .detail {
+        float: right;
+        width: 25%;
+        margin-right: 6%;
+      }
+
+      .container .article-background .detail .search,
+      .container .article-background .detail .category,
+      .container .article-background .detail .calendar,
+      .container .article-background .detail .tags {
+        width: 25rem;
+        margin: 0 10rem 3rem 0;
+        background-color: #FFFFFF;
+      }
+      
+      .container .article-background .detail .search {
+        height: 7rem;
+        line-height: 7rem;
+      }
+      
+       .container .article-background .article .search {
+        display: none;
+       }
+
+      .container .article-background .detail .search .search-box{
+        height: 3rem;
+        width: 15rem;
+        margin-left: 2rem;
+        text-align: center;
+        background: url('img/magnifier.png');
+        background-repeat:no-repeat;
+        background-size: 20% auto;
+        background-position: 1rem 0;
+      }
+      
+      .container .article-background .detail .search .search-btn {
+        height: 3.6rem;
+        width: 4rem;
+        display: inline-block;
+        background-color: #EEEEEE;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 3.6rem;
+        margin-left: -0.3rem;
+        margin-top: -0.3rem;
+      }
+
+      .container .article-background .detail .search .search-btn span {
+        color: white;
+        font-weight: bold;
+      }
+
+      .container .article-background .detail .category {  
+        background-color: white;
+      }
+
+      .container .article-background .detail .category li {
+        height: 3rem;
+        border-left: #DFC6E6 solid 5px;
+        border-bottom: #EEEEEE solid 2px;
+      }
+
+      .container .article-background .detail .category .selected {
+        border-left: #a406d0 solid 5px;
+      }
+
+      .container .article-background .detail .category span {
+        display: inline-block;
+        padding: 1rem;
+      }
+
+      .container .article-background .detail .tags {
+        background-color: white;
+      }
+
+      .container .article-background .detail .tags .tags-label {
+        padding-top: 20px;
+        color: grey;
+        padding-left: 10px;
+        font-size: 15px;
+      }
+
+      .container .article-background .detail .tags span a {
+        color: #773C88;
+      }
+
+
+      .container .article-background .detail .tags span .JavaScript{
+        font-size: 35px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .container .article-background .detail .tags span .CSS {
+        font-size: 25px;
+        font-weight:  400;
+        margin-right: 9px;
+      }
+
+      .container .article-background .detail .tags span .flex {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .container .article-background .detail .tags span .webGL {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .container .article-background .detail .tags span .HTML,
+      .container .article-background .detail .tags span .jQuery,
+      .container .article-background .detail .tags span .Echarts{
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 8px;
+      }
+      
+      .container .article-background .detail .tags span .Canvas {
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 50px;
+      }
+      
+      .container .article-background .detail .tags span .prototype {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .container .article-background .detail .tags span .HTML5{
+        font-size: 35px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .container .article-background .detail .tags span .grid,
+      .container .article-background .detail .tags span .nodeJS,
+      .container .article-background .detail .tags span .css3 {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .container .article-background .detail .tags .key-words {
+        padding-left: 10px;
+        padding-bottom: 20px;
+      }
+      
+      footer {
+        margin-top: 0;
+      }
+
+      /* hover效果 */
+      .container .article-background .detail .category li:hover {
+        height: 3rem;
+        border-left: #a406d0 solid 5px;
+        border-bottom: #EEEEEE solid 3px;
+        color: black;
+
+      }
+      @media only screen and (max-width: 860px) {
+
+        .container .article-background .detail {
+          display: none;
+        }  
+
+        .container .article-background .article .search {
+          height: 7rem;
+          line-height: 7rem;
+          display: block;
+        }
+        
+        .container .article-background .article .search {
+          background-color: white;
+          margin-bottom: 1rem;
+        }
+
+        .container .article-background .article .search .search-box {
+          height: 3rem;
+          width: 15rem;
+          margin-left: 2rem;
+          text-align: center;
+          background: url('img/magnifier.png');
+          background-repeat:no-repeat;
+          background-size: 20% auto;
+          background-position: 1rem 0;
+        }
+        
+        .container .article-background .article .search .search-btn {
+          height: 3.6rem;
+          width: 4rem;
+          display: inline-block;
+          background-color: #EEEEEE;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 3.6rem;
+          margin-left: -0.3rem;
+          margin-top: -0.3rem;
+        }
+
+        .container .article-background .article .search .search-btn span {
+          color: white;
+          font-weight: bold;
+        }
+
+        .container .article-background .article {
+            margin-left: 10rem;
+            width: 80%;
+            margin-left: 8rem;
+        }
+
+        .container .article .article-page .select-number{
+          display: none;
+        }
+      }

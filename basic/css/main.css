@@ -143,7 +143,26 @@ header .nav .navList {
   padding-right: 10rem;
   display: block;
 }
+ header .nav .burger-list-hide {
+  display: none;
+}
 
+header .nav .burger-list {
+  position: absolute;
+  right: 0;
+  top: 8rem;
+  z-index: 1;
+  width: 20rem;
+  height: 10rem;
+  background-color: black;
+  display: none;
+}
+
+header .nav .burger-list .burger-ul .burger-li {
+  text-align: center;
+  display: block !important;
+  border-top: 1px solid white;
+} 
 header .nav ul li {
   display: inline-block;
 }
@@ -338,7 +357,7 @@ footer img {
 /* header 移动端设备 */
 
 /* 800px 以下 */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 860px) {
   /* header */
   header .nav {
     background-color: black;
@@ -347,6 +366,11 @@ footer img {
   header .nav .github-brand {
     display: none;
   }
+
+  header .nav .brand {
+    display: none;
+  }
+
   header .nav .navList {
     text-align: right;
     padding-top: 4.5rem;
@@ -403,6 +427,7 @@ footer img {
   .footer .footer-content-list ul {
     /* padding-left: 5rem; */
     padding-top: 5rem;
+    display: block;
   }
 
   .footer .footer-content-list li {

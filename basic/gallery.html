@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+  <!-- IE条件注释 -->
+  <!--[if lte IE 8]>
+  <p class="browserupgrade">您的浏览器版本影响体验, 请到 <a href="http://browsehappy.com/">这里</a> 更新, 以获取最佳的体验</p>
+  <![endif]-->
+    <header>
+    <nav class="nav">
+        <a href="#" ><img class="brand"src="img/me.png" alt="回到首页"></a>
+        <a href="#" ><img  class="github-brand" src="img/icon.png" alt="转到github"></a>
+        <ul class="navList" id="navList">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="blog.html">文章</a></li>
+          <li><a href="profile.html">作品</a></li>
+          <li><a href="gallery.html">关于</a></li>
+        </ul>
+        <img id="burgerButton" class="burger-button" src="img/button.png" alt="burger-button">
+        <div id="burgerSwitch" class="burger-list" style="display:none;">
+          <ul id="burgerUl" class="burger-ul">
+            <li class="burger-li"><a href="index.html">首页</a></li>
+            <li class="burger-li"><a href="blog.html">文章</a></li>
+            <li class="burger-li"><a href="profile.html">作品</a></li>
+            <li class="burger-li"><a href="gallery.html">关于</a></li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <!-- container包裹层 -->
+  <div class="container">
+    <div class="gallery clearfix">
+      <div class="gallery-right">
+        <div class="search">
+          <input class="search-box" type="text" placeholder="Keywords">
+          <button>GO</button>
+        </div>
+        <div class="popularity">
+          <h4>人气排行榜</h4>
+          <div class="popularity-card">
+            <ul>
+              <li><div class="list-style">1</div><div class="label1"></div><span>ui.tree      </span></li>
+              <li><div class="list-style">2</div><div class="label2"></div><span>ui.trim      </span></li>
+              <li><div class="list-style">3</div><div class="label3"></div><span>app.todo     </span></li>
+              <li><div class="list-style">4</div><div class="label4"></div><span>ui.tab       </span></li>
+              <li><div class="list-style">5</div><div class="label5"></div><span>util.addClass</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-content">
+        <div class="search">
+          <input class="search-box" type="text" placeholder="Keywords">
+          <button>GO</button>
+        </div>
+        <div>
+          <ul class="gallery-label">
+            <li>ALL</li>
+            <li class="label01">JavaScriptFunctions</li>
+            <li class="label02">UI Components</li>
+            <li class="label03">Framework</li>
+            <li class="label04">Applications</li>
+          </ul>
+        </div>
+        <div class="gallery-wrapper clearfix">
+            <div class="gallery-photo box1">
+              <img src="img/picture01.jpg" alt="">
+              <div>
+                <div class="gallery-photo-order"><span>B</span></div>
+                <div class="gallery-photo-text">
+                  <h2>这里是标题</h2>
+                  <span>这里是内容啊，这里是内容啊，这里是内容啊</span>
+                </div>
+              </div>  
+            </div>
+
+            <div class="gallery-photo box2">
+              <img src="img/picture02.jpg" alt="">
+              <div>
+                <div class="gallery-photo-order"><span>B</span></div>
+                <div class="gallery-photo-text">
+                  <h2>这里是标题</h2>
+                  <span>这里是内容啊，这里是内容啊，这里是内容啊</span>
+                </div>
+              </div>  
+            </div>
+
+            <div class="gallery-photo box3">
+              <img src="img/picture03.jpg" alt="">
+              <div>
+                <div class="gallery-photo-order"><span>B</span></div>
+                <div class="gallery-photo-text">
+                  <h2>这里是标题</h2>
+                  <span>这里是内容啊，这里是内容啊，这里是内容啊</span>
+                </div>
+              </div>  
+            </div>
+
+            
+            <div class="gallery-photo box4">
+              <img src="img/picture04.jpg" alt="">
+              <div>
+                <div class="gallery-photo-order"><span>B</span></div>
+                <div class="gallery-photo-text">
+                  <h2>这里是标题</h2>
+                  <span>这里是内容啊，这里是内容啊，这里是内容啊</span>
+                </div>
+              </div>  
+            </div>
+
+            <div class="gallery-photo box5">
+              <img src="img/picture05.jpg" alt="">
+              <div>
+                <div class="gallery-photo-order"><span>B</span></div>
+                <div class="gallery-photo-text">
+                  <h2>这里是标题</h2>
+                  <span>这里是内容啊，这里是内容啊，这里是内容啊</span>
+                </div>
+              </div>  
+            </div>
+
+
+            <div class="gallery-photo box6">
+              <img src="img/picture06.jpg" alt="">
+              <div>
+                <div class="gallery-photo-order"><span>B</span></div>
+                <div class="gallery-photo-text">
+                  <h2>这里是标题</h2>
+                  <span>这里是内容啊，这里是内容啊，这里是内容啊</span>
+                </div>
+              </div>  
+            </div>
+
+            <div class="gallery-photo box7">
+              <img src="img/picture07.jpg" alt="">
+              <div>
+                <div class="gallery-photo-order"><span>B</span></div>
+                <div class="gallery-photo-text">
+                  <h2>这里是标题</h2>
+                  <span>这里是内容啊，这里是内容啊，这里是内容啊</span>
+                </div>
+              </div>  
+            </div>
+        </div>
+        <div id="preload" class="preload">
+          <span><label>点击查看更多</label></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <nav class="footer">
+        <div class="footer-content-menu">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="blog.html">文章</a></li>
+            <li><a href="profile.html">作品</a></li>
+            <li><a href="gallery.html">关于</a></li>
+          </ul>
+        </div>
+        <div class="footer-content-list">
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>友情链接</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>友情链接</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-article">
+        <p><span class="press">网龙前端实习培训小组 版权所有 ® 2017-2020<span></p> 
+        <img src="img/icon.png" alt="github-photo">
+      </div> 
+  </footer>
+  <script>
+
+
+    addLoadEvent(burgerList());
+    //   window.onload = function(){
+    //   burgerList();
+    //   // waterfall('galleryPictureWrapper','gallery-picture-box');
+    // }
+  </script>
+</body>
+</html>

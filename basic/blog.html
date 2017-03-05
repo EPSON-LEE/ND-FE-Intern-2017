@@ -3,314 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Index</title>
+    <title>Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/blog.css">
     <script src="js/main.js"></script>
-    <style>
-      .container .article-background {
-        width: 100%;
-        height: 100%;
-        background-color: #EEEEEE;
-        margin-bottom: 15rem;
-      }
-
-      .container .article-background .article,
-      .container .article-background .detail {
-        margin-top: 2rem;
-      }
-
-      .container .article-background .article {
-        float: left;
-        width: 50%;
-        margin-left: 20rem;
-        position: relative;
-      }
-
-      .container .article-background .article .article-label, 
-      .container .article-background .article .article-label2,
-      .container .article-background .article .article-label3 {
-        width: 4rem;
-        position: absolute;
-        left: -4rem;
-      }
-      
-      .container .article-background .article .article-label-date{
-        font-size: 15px;
-        line-height: 4rem;
-        text-align: center;
-        background-color: #522A5C;
-        color: white;
-      }
-
-      .container .article-background .article .article-label-name{
-        font-size: 15px;
-      line-height: 4rem;
-      text-align: center;
-      background-color: #A660B7;
-      color: white;
-      }
-
-      .container .article-background .article .article-content {
-        padding: 2rem;
-        background-color: white;
-      }
-
-      .container .article-background .article .article-content h3 {
-        color: purple;
-        font-size: 16px;
-      }
-      
-      .container .article-background .article .article-content h4 {
-        color: grey;
-      }    
-      
-      .container .article-background .article .article-content p {
-        font-weight: bold;
-        text-indent: 2rem;
-        margin: 0;
-      }
-      .container .article-background .article .article-content {
-        margin-bottom: 1rem;
-      }
-      
-      .container .article-background .article .article-page {
-
-      }
-  
-      .container .article-background .article ul {
-        text-align: center;
-        padding: 5rem;
-      }      
-
-      .container .article-background .article li {
-        margin-left: 5px;
-        padding: 15px;
-        background-color: white;
-        display: inline-block;
-      }
-      
-      .container .article-background .article .selected {
-        background-color: purple;
-        color: white;
-      }
-
-      .container .article-background .detail {
-        float: right;
-      }
-
-      .container .article-background .detail .search,
-      .container .article-background .detail .category,
-      .container .article-background .detail .calendar,
-      .container .article-background .detail .tags {
-        width: 25rem;
-        margin: 0 10rem 3rem 0;
-        background-color: #FFFFFF;
-      }
-      
-      .container .article-background .detail .search {
-        height: 7rem;
-        line-height: 7rem;
-      }
-      
-       .container .article-background .article .search {
-        display: none;
-       }
-
-      .container .article-background .detail .search .search-box{
-        height: 3rem;
-        width: 15rem;
-        margin-left: 2rem;
-        text-align: center;
-        background: url('img/magnifier.png');
-        background-repeat:no-repeat;
-        background-size: 20% auto;
-        background-position: 1rem 0;
-      }
-      
-      .container .article-background .detail .search .search-btn {
-        height: 3.6rem;
-        width: 4rem;
-        display: inline-block;
-        background-color: #EEEEEE;
-        text-align: center;
-        vertical-align: middle;
-        line-height: 3.6rem;
-        margin-left: -0.3rem;
-        margin-top: -0.3rem;
-      }
-
-      .container .article-background .detail .search .search-btn span {
-        color: white;
-        font-weight: bold;
-      }
-
-      .container .article-background .detail .category {  
-        background-color: white;
-      }
-
-      .container .article-background .detail .category li {
-        height: 3rem;
-        border-left: #DFC6E6 solid 5px;
-        border-bottom: #EEEEEE solid 2px;
-      }
-
-      .container .article-background .detail .category .selected {
-        border-left: #a406d0 solid 5px;
-      }
-
-      .container .article-background .detail .category span {
-        display: inline-block;
-        padding: 1rem;
-      }
-
-      .container .article-background .detail .tags {
-        background-color: white;
-      }
-
-      .container .article-background .detail .tags .tags-label {
-        padding-top: 20px;
-        color: grey;
-        padding-left: 10px;
-        font-size: 15px;
-      }
-
-      .container .article-background .detail .tags span a {
-        color: #773C88;
-      }
-
-
-      .container .article-background .detail .tags span .JavaScript{
-        font-size: 35px;
-        font-weight: bold;
-        margin-right: 10px;
-      }
-
-      .container .article-background .detail .tags span .CSS {
-        font-size: 25px;
-        font-weight:  400;
-        margin-right: 9px;
-      }
-
-      .container .article-background .detail .tags span .flex {
-        font-size: 15px;
-        font-weight: 500;
-      }
-
-      .container .article-background .detail .tags span .webGL {
-        font-size: 15px;
-        font-weight: 500;
-      }
-
-      .container .article-background .detail .tags span .HTML,
-      .container .article-background .detail .tags span .jQuery,
-      .container .article-background .detail .tags span .Echarts{
-        font-size: 20px;
-        font-weight: bold;
-        margin-right: 8px;
-      }
-      
-      .container .article-background .detail .tags span .Canvas {
-        font-size: 15px;
-        font-weight: 500;
-        margin-right: 50px;
-      }
-      
-      .container .article-background .detail .tags span .prototype {
-        font-size: 15px;
-        font-weight: 500;
-      }
-
-      .container .article-background .detail .tags span .HTML5{
-        font-size: 35px;
-        font-weight: bold;
-        margin-right: 10px;
-      }
-
-      .container .article-background .detail .tags span .grid,
-      .container .article-background .detail .tags span .nodeJS,
-      .container .article-background .detail .tags span .css3 {
-        font-size: 15px;
-        font-weight: 500;
-      }
-
-      .container .article-background .detail .tags .key-words {
-        padding-left: 10px;
-        padding-bottom: 20px;
-      }
-
-      @media only screen and (max-width: 800px) {
-
-        .container .article-background .detail {
-          display: none;
-        }  
-
-        .container .article-background .article .search {
-          height: 7rem;
-          line-height: 7rem;
-          display: block;
-        }
-        
-        .container .article-background .article .search {
-          background-color: white;
-          margin-bottom: 1rem;
-        }
-
-        .container .article-background .article .search .search-box {
-          height: 3rem;
-          width: 15rem;
-          margin-left: 2rem;
-          text-align: center;
-          background: url('img/magnifier.png');
-          background-repeat:no-repeat;
-          background-size: 20% auto;
-          background-position: 1rem 0;
-        }
-        
-        .container .article-background .article .search .search-btn {
-          height: 3.6rem;
-          width: 4rem;
-          display: inline-block;
-          background-color: #EEEEEE;
-          text-align: center;
-          vertical-align: middle;
-          line-height: 3.6rem;
-          margin-left: -0.3rem;
-          margin-top: -0.3rem;
-        }
-
-        .container .article-background .article .search .search-btn span {
-          color: white;
-          font-weight: bold;
-        }
-
-        .container .article-background .article {
-            margin-left: 10rem;
-            width: 80%;
-            margin-left: 8rem;
-        }
-      }
-
-    </style>
 </head>
 <body>
   <!-- IE条件注释 -->
   <!--[if lte IE 8]>
   <p class="browserupgrade">您的浏览器版本影响体验, 请到 <a href="http://browsehappy.com/">这里</a> 更新, 以获取最佳的体验</p>
   <![endif]-->
-  <header>
+    <header>
     <nav class="nav">
         <a href="#" ><img class="brand"src="img/me.png" alt="回到首页"></a>
         <a href="#" ><img  class="github-brand" src="img/icon.png" alt="转到github"></a>
         <ul class="navList" id="navList">
-          <li><a href="#">首页</a></li>
-          <li><a href="#">文章</a></li>
-          <li><a href="#">作品</a></li>
-          <li><a href="#">关于</a></li>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="blog.html">文章</a></li>
+          <li><a href="profile.html">作品</a></li>
+          <li><a href="gallery.html">关于</a></li>
         </ul>
-        <img id="burgerButton"class="burger-button" src="img/button.png" alt="burger-button">
+        <img id="burgerButton" class="burger-button" src="img/button.png" alt="burger-button">
+        <div id="burgerSwitch" class="burger-list" style="display:none;">
+          <ul id="burgerUl" class="burger-ul">
+            <li class="burger-li"><a href="index.html">首页</a></li>
+            <li class="burger-li"><a href="blog.html">文章</a></li>
+            <li class="burger-li"><a href="profile.html">作品</a></li>
+            <li class="burger-li"><a href="gallery.html">关于</a></li>
+          </ul>
+        </div>
     </nav>
   </header>
   <!-- container包裹层 -->
@@ -381,18 +105,17 @@
           <div class="article-page">
             <ul>
               <li class="selected">首页</li>
-              <li>上一页</li>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>...</li>
+              <li class="select-dark">上一页</li>
+              <li class="select-number select-dark">1</li>
+              <li class="select-number">2</li>
+              <li class="select-number">3</li>
+              <li class="select-number">4</li>
+              <li class="select-number">...</li>
               <li>下一页</li>
               <li>最后页码</li>
             </ul>
           </div>
         </div>
-      
       <div class="detail clearfix">
         <div class="search">
           <input class="search-box" type="text" placeholder="Keywords">
@@ -421,7 +144,7 @@
                     </div>
                 </div>
                 <div class="select" id="sm">
-                    <div class="stop" id="cm">06</div>
+                    <div class="stop" id="cm">03</div>
                     <div class="sbox" id="mm">
                         <ul id="DateAll">
                             <li>01</li>
@@ -450,74 +173,72 @@
             <span><a class="jQuery" href="">jQuery</a></span>
             <span><a class="Echarts" href="">Echarts</a></span>
           </div>
-        </div>
-      </div>
+        </div></div>
     </div>
-    <!-- footer -->
-    <nav class="footer">
-      <div class="footer-content-menu">
-        <ul>
-          <li><a href="#">首页</a></li>
-          <li><a href="#">文章</a></li>
-          <li><a href="#">作品</a></li>
-          <li><a href="#">关于</a></li>
-        </ul>
-      </div>
-      <div class="footer-content-list">
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>友情链接</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>友情链接</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-      </div>
-    </nav>
   </div>
 
   <footer>
-    <div class="footer-article">
-      <p><span class="press">网龙前端实习培训小组 版权所有 ® 2017-2020<span></p> 
-      <img src="img/icon.png" alt="github-photo">
-    </div> 
+    <nav class="footer clearfix">
+        <div class="footer-content-menu">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="blog.html">文章</a></li>
+            <li><a href="profile.html">作品</a></li>
+            <li><a href="gallery.html">关于</a></li>
+          </ul>
+        </div>
+        <div class="footer-content-list">
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>友情链接</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>友情链接</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-article">
+        <p><span class="press">网龙前端实习培训小组 版权所有 ® 2017-2020<span></p> 
+        <img src="img/icon.png" alt="github-photo">
+      </div> 
   </footer>
   <script>
       var SY,SM,SD,cy,cm
@@ -536,16 +257,7 @@
           getDynamicTable(SY,SM)
           document.getElementById("YearAll").innerHTML = YearAll(SY);
           document.getElementById("DateAll").innerHTML = DateAll(SY,SM);
-
-          var burgerButton = document.getElementById('burgerButton');
-          var navList = document.getElementById('navList');
-          burgerButton.onclick = function(){
-            if(navList.style.display == 'none' || navList.style.display == ''){
-              navList.style.display = 'block';  
-            }else{
-              navList.style.display = 'none';
-            }
-          }
+          burgerList();
       }
       // 下拉列表显示的年份
       function YearAll(Y){

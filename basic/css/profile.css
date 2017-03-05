@@ -1,0 +1,81 @@
+.container {
+  background-color: #f7f7f7;
+}
+.profile {
+  margin: 0 auto;
+  width: 80%;
+  height: 160rem;
+  background-color: #FFFFFF;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  background-image: url(../img/line.png);
+  background-repeat: repeat-y;
+  background-position-x: center;
+}
+
+.profile .profile-content {
+  width: 20%;
+  height: 160rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.head, .contact, .exprience, .work {
+  border-radius: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  background-repeat:  no-repeat;
+  background-size: cover;
+} 
+
+.head {
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/me.png);
+  display: inline-block;
+  border: 10px solid #f7f7f7;
+  margin-bottom: 2rem;
+  margin-top: -7rem;
+}
+
+.contact {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../img/contact.jpg);
+  border: 5px solid #f7f7f7;
+}
+
+.exprience {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../img/experience.jpg);
+  border: 5px solid #f7f7f7;
+}
+
+.work {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../img/work.jpg);
+  border: 5px solid #f7f7f7;
+}
+
+.container .profile .profile-content .profile-left {
+  margin-left: -20rem;
+}
+
+.container .profile .profile-content .profile-right {
+  width: 20rem;
+  height: 15rem;
+  margin-left: 15rem;
+  margin-top: -5rem;
+  text-align: -webkit-auto;
+}
+
+.container .profile .profile-content .profile-middle {
+  border: solid 5px #f7f7f7;
+  width: 5rem;
+  margin: 0 auto;
+  border-radius: 20%;
+  background-color: white;
+}

@@ -1,0 +1,238 @@
+.container .gallery {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.container .gallery-right {
+  float: right;
+  width: 13rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .gallery-right .popularity {
+  width: 20rem;
+  padding: 1rem;
+  height: 100%;
+  background-color: white;
+  margin-top: 1rem;          
+
+}
+
+.container .gallery-right .popularity {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.container .gallery-right .popularity .popularity-card {
+  width: 20rem;
+  height: 20rem;
+  /* background-color: orange;   */
+}
+
+.container .gallery-right .popularity .popularity-card ul {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 23rem;
+}
+
+.container .gallery-right .popularity .popularity-card ul li {
+  margin-bottom: 1rem;
+}
+
+.container .gallery-right .popularity .popularity-card ul li div{
+  display: inline-block;
+  margin: 0 1rem 0 1rem;
+  width: 10rem;
+  height: 1.5rem;
+  background: purple;
+}
+
+.container .gallery-right .popularity .popularity-card ul li .list-style {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: purple;
+  display: inline-block;
+  text-align: center;
+  line-height: 2rem;
+  color: white;
+}
+
+.container .gallery-right .popularity .popularity-card ul li .label2 {
+  width: 8rem;
+  margin-right: 2rem;
+}
+
+.container .gallery-right .popularity .popularity-card ul li .label3 {
+  width: 6rem;
+  margin-right: 4rem;
+}
+
+.container .gallery-right .popularity .popularity-card ul li .label4 {
+  width: 4rem;
+  margin-right: 6rem;
+}
+
+.container .gallery-right .popularity .popularity-card ul li .label5 {
+  width: 2rem;
+  margin-right: 7rem;
+}
+
+.container .gallery .search {
+  background: white;
+  padding: 1rem;
+  width: 20rem;
+}
+
+.container .gallery .search .search-box {
+  background-image: url(img/magnifier.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  height: 3rem;
+  width: 15rem;
+}
+
+.container .gallery .search button {
+  background-color: #DDDDDD;
+  color: white;
+  margin-left: -4px;
+  width: 4rem;
+  height: 3.5rem;
+}
+
+.container .gallery .gallery-content {
+  width: 60rem;
+  margin: 0 auto;
+  margin-left: -5rem;
+  margin-top: -4rem;
+}
+
+.container .gallery .gallery-content ul li {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 1rem;
+  border-top: 5px solid purple;
+  border-bottom: 3px solid #f7f7f7;
+  background-color: white;
+}
+/* gallery-photo */
+ .container .gallery .gallery-content .gallery-wrapper {
+  column-count: 3;  
+  column-gap: 5px;
+  column-span: 1;
+  break-inside: avoid;
+  padding: 2%;
+  background-color: white;
+  margin-bottom: 1rem;
+  -webkit-column-break-inside: avoid; 
+ }
+  
+ .container .gallery .gallery-content .gallery-wrapper .gallery-photo img {
+  width: 100%;
+ } 
+
+ .container .gallery .gallery-content .gallery-wrapper .gallery-photo {
+    margin-bottom: 2rem;
+ }
+  
+ .container .gallery .gallery-content .gallery-wrapper .gallery-photo .gallery-photo-order{
+    height: 5rem;
+    width: 4rem;
+    float: left;
+    line-height: 3rem;
+    text-align: center;
+ } 
+
+ .container .gallery .gallery-content .gallery-wrapper .gallery-photo .gallery-photo-order span{
+  display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid #EEEEEE;
+    color: white;
+ }
+
+ .box1 {
+  background-color: #522A5C;
+ }
+
+ .box2 {
+  background-color: #5900B2;
+ }
+
+ .box3 {
+  background-color: #8C2300;
+ }
+
+ .box4 {
+  background-color: #8C2300;
+ }
+
+ .box5 {
+  background-color:#5900B2;
+ }
+
+ .box6 {
+  background-color: #D9A300;
+ }
+
+ .box7 {
+  background-color: #D9A300;
+ }
+
+ .gallery-content .search {
+  display: none;
+ }
+
+/* gallery-picture */
+.preload {
+  width: 60rem;
+  height: 5rem;
+  background-color: white;
+  margin: 0 auto; 
+  text-align: center;
+  line-height: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* label color */
+.container .gallery .gallery-content ul .label01 {
+  border-top: solid 5px #DFC6E6;
+}
+
+.container .gallery .gallery-content ul .label02 {
+  border-top: solid 5px #D2A6FF;
+}
+
+.container .gallery .gallery-content ul .label03 {
+  border-top: solid 5px #FFA98C;
+}
+
+.container .gallery .gallery-content ul .label04 {
+  border-top: solid 5px #FFE188;
+}
+
+@media only screen and (max-width: 860px) {
+  .container .gallery-right {
+    display: none;
+  }
+
+  .gallery-content .search {
+    display: block;
+  }
+
+  .container .gallery .gallery-content .gallery-wrapper {
+    column-count: 2;
+    column-gap: 5px;
+    column-span: 1;
+    break-inside: avoid;
+    padding: 2%;
+    background-color: white;
+    margin-bottom: 1rem;
+    -webkit-column-break-inside: avoid;
+  }
+}
+

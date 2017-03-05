@@ -19,12 +19,20 @@
         <a href="#" ><img class="brand"src="img/me.png" alt="回到首页"></a>
         <a href="#" ><img  class="github-brand" src="img/icon.png" alt="转到github"></a>
         <ul class="navList" id="navList">
-          <li><a href="#">首页</a></li>
-          <li><a href="#">文章</a></li>
-          <li><a href="#">作品</a></li>
-          <li><a href="#">关于</a></li>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="blog.html">文章</a></li>
+          <li><a href="profile.html">作品</a></li>
+          <li><a href="gallery.html">关于</a></li>
         </ul>
-        <img id="burgerButton"class="burger-button" src="img/button.png" alt="burger-button">
+        <img id="burgerButton" class="burger-button" src="img/button.png" alt="burger-button">
+        <div id="burgerSwitch" class="burger-list" style="display:none;">
+          <ul id="burgerUl" class="burger-ul">
+            <li class="burger-li"><a href="index.html">首页</a></li>
+            <li class="burger-li"><a href="blog.html">文章</a></li>
+            <li class="burger-li"><a href="profile.html">作品</a></li>
+            <li class="burger-li"><a href="gallery.html">关于</a></li>
+          </ul>
+        </div>
     </nav>
   </header>
   <!-- container包裹层 -->
@@ -81,8 +89,7 @@
         </div>
       </div>
     </div>
-
-
+    
     <!-- introduce -->
     <section class="introduction">
       <div class="introduction-content">
@@ -95,84 +102,73 @@
         <p>微信公众号：西邮小O</p>
       </div>
     </section>
-    <!-- footer -->
-    <nav class="footer">
-      <div class="footer-content-menu">
-        <ul>
-          <li><a href="#">首页</a></li>
-          <li><a href="#">文章</a></li>
-          <li><a href="#">作品</a></li>
-          <li><a href="#">关于</a></li>
-        </ul>
-      </div>
-      <div class="footer-content-list">
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>友情链接</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>友情链接</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-        <ul>
-          <li class="title"><a>学习资料</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-      </div>
-    </nav>
   </div>
 
   <footer>
-    <div class="footer-article">
-      <p><span class="press">网龙前端实习培训小组 版权所有 ® 2017-2020<span></p> 
-      <img src="img/icon.png" alt="github-photo">
-    </div> 
+    <nav class="footer">
+        <div class="footer-content-menu">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="blog.html">文章</a></li>
+            <li><a href="profile.html">作品</a></li>
+            <li><a href="gallery.html">关于</a></li>
+          </ul>
+        </div>
+        <div class="footer-content-list">
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>友情链接</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>友情链接</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a>学习资料</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-article">
+        <p><span class="press">网龙前端实习培训小组 版权所有 ® 2017-2020<span></p> 
+        <img src="img/icon.png" alt="github-photo">
+      </div> 
   </footer>
   <script>
-    window.onload = function(){
-      var burgerButton = document.getElementById('burgerButton');
-      var navList = document.getElementById('navList');
-      burgerButton.onclick = function(){
-        if(navList.style.display == 'none' || navList.style.display == ''){
-          navList.style.display = 'block';  
-        }else{
-          navList.style.display = 'none';
-        }
-      }
-    }
+    addLoadEvent(burgerList());
   </script>
 </body>
 </html>
